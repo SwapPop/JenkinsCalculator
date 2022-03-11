@@ -19,14 +19,14 @@ public class Main {
         command=input.next();
 //        System.out.println(command);
       }
-      if (input.hasNext()) {
-        num1=Integer.valueOf(input.next());
-//        System.out.println(num1);
-
-      }
 
       switch (command) {
         case "add":
+          if (input.hasNext()) {
+            num1=Integer.valueOf(input.next());
+//        System.out.println(num1);
+
+          }
           if (input.hasNext()) {
             num2=Integer.valueOf(input.next());
 //            System.out.println(num2);
@@ -35,12 +35,22 @@ public class Main {
           break;
         case "subtract":
           if (input.hasNext()) {
+            num1=Integer.valueOf(input.next());
+//        System.out.println(num1);
+
+          }
+          if (input.hasNext()) {
             num2=Integer.valueOf(input.next());
 //            System.out.println(num2);
           }
           System.out.println(calculator.subtract(num1, num2) + "\n");
           break;
         case "multiply":
+          if (input.hasNext()) {
+            num1=Integer.valueOf(input.next());
+//        System.out.println(num1);
+
+          }
           if (input.hasNext()) {
             num2=Integer.valueOf(input.next());
 //            System.out.println(num2);
@@ -49,15 +59,30 @@ public class Main {
           break;
         case "divide":
           if (input.hasNext()) {
+            num1=Integer.valueOf(input.next());
+//        System.out.println(num1);
+
+          }
+          if (input.hasNext()) {
             num2=Integer.valueOf(input.next());
 //            System.out.println(num2);
           }
           System.out.println(calculator.divide(num1, num2) + "\n");
           break;
         case "fibonacci":
+          if (input.hasNext()) {
+            num1=Integer.valueOf(input.next());
+//        System.out.println(num1);
+
+          }
           System.out.println(calculator.fibonacciNumberFinder(num1) + "\n");
           break;
         case "binary":
+          if (input.hasNext()) {
+            num1=Integer.valueOf(input.next());
+//        System.out.println(num1);
+
+          }
           System.out.println(calculator.intToBinaryNumber(num1) + "\n");
           break;
         case "exit":
