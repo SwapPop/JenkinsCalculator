@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class Main {
   public static void main(String[] args) {
     Calculator calculator = new Calculator();
@@ -67,5 +69,7 @@ public class Main {
           break;
       }
     }
+
+    exit(0);
   }
 }
